@@ -24,7 +24,6 @@ body {
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 12px;
-
   transition: all 0.4s;
 }
 
@@ -46,12 +45,16 @@ body {
 
 .btn-learn-more:hover,
 .btn-learn-more:active {
-  background-color: rgb(186, 241, 174);
+  background-color: rgb(212, 241, 205);
   box-shadow: inset 0 0 3px #115302;
 }
 
 .margin-right-small {
   margin-right: 1.4rem;
+}
+
+.nowrap{
+  white-space: nowrap;
 }
 
 /*Navigation Section */
@@ -64,9 +67,18 @@ body {
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
+  display: inline-block;
   color: #000000;
   font-weight: 400;
   font-size: 2rem;
+  transition: all 0.4s
+}
+
+.main-nav-link:hover,
+.main-nav-link:active{
+  color: #9e0606;
+  
+  
 }
 
 /*Header Section */
@@ -81,7 +93,7 @@ body {
 }
 
 .logo {
-  height: 4rem;
+  height: 8rem;
 }
 
 /*Hero Section */
@@ -103,7 +115,7 @@ body {
 }
 
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.5px;
@@ -120,4 +132,37 @@ body {
 
 .hero-image {
   width: 100%;
+  -webkit-mask-image: linear-gradient(to right, 
+  rgba(0,0,0,0) 0%, 
+  rgba(0,0,0,1) 10%,    
+  rgba(0,0,0,1) 90%,    
+  rgba(0,0,0,0) 100%    
+    ),
+    linear-gradient(to bottom, 
+      rgba(0,0,0,0) 0%,    
+      rgba(0,0,0,1) 10%,   
+      rgba(0,0,0,1) 90%, 
+      rgba(0,0,0,0) 100%   
+    );
+  -webkit-mask-composite: intersect;  
+  mask-composite: intersect;          
+  
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+/* Choose your world section */
+
+.choose-your-world{
+  padding: 10rem;
+  background-color: antiquewhite;
+}
+
+.grid{
+  display: grid;
+  gap 10rem;
+  grid-template-columns: repeat(2, 1fr);
 }
