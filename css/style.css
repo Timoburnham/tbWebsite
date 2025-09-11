@@ -127,6 +127,10 @@ body {
   color: #9e0606;
 }
 
+.logo {
+  height: 8rem;
+}
+
 /*Header Section */
 
 .header {
@@ -138,9 +142,7 @@ body {
   padding: 0 4.8rem;
 }
 
-.logo {
-  height: 8rem;
-}
+
 
 /*Hero Section */
 
@@ -230,3 +232,16 @@ body {
   transform: scale(1.08) translateY(-6px);
   box-shadow: 0 0 20px rgba(0, 200, 255, 0.6), 0 0 40px rgba(0, 200, 255, 0.4);
 }
+
+
+/* footer section */
+
+.footer{
+  
+  width: 100%;
+  background-color: #555;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
