@@ -13,6 +13,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  margin: 0;
 }
 
 /* General */
@@ -29,7 +30,6 @@ body {
 .heading-secondary {
   font-size: 4rem;
   font-weight: 600;
-  margin-bottom: 3rem;
 }
 
 .heading-tertiary {
@@ -40,7 +40,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 .grid {
@@ -97,8 +97,17 @@ body {
   margin-right: 1.4rem;
 }
 
-.margin-bottom {
+.margin-bottom-small {
   margin-bottom: 2rem;
+}
+.margin-bottom-big {
+  margin-bottom: 4rem;
+}
+.margin-top-small {
+  margin-top: 2rem;
+}
+.margin-top-big {
+  margin-top: 4rem;
 }
 
 .nowrap {
@@ -141,8 +150,6 @@ body {
   height: 10rem;
   padding: 0 4.8rem;
 }
-
-
 
 /*Hero Section */
 
@@ -198,8 +205,8 @@ body {
 /* Choose your world section */
 
 .choose-your-world {
-  padding: 5rem;
-  background-color: rgb(48, 84, 147) 0;
+  padding: 3rem;
+  background-color: rgb(0, 0, 0);
 }
 
 .world-image {
@@ -233,15 +240,27 @@ body {
   box-shadow: 0 0 20px rgba(0, 200, 255, 0.6), 0 0 40px rgba(0, 200, 255, 0.4);
 }
 
-
 /* footer section */
 
-.footer{
-  
-  width: 100%;
-  background-color: #555;
+.footer-section {
+  background-color: #ff0909;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40rem;
+}
+
+.footer {
+  max-width: 100%;
+  max-height: 100%;
   padding: 2rem 0;
   display: flex;
   justify-content: center;
 }
 
+.footer-text {
+  font-size: 5rem;
+  line-height: 1;
+  margin: 0;
+}
