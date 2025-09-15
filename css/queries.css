@@ -33,3 +33,28 @@
     padding: 0 4.2;
   }
 }
+
+@media (max-width: 67em) {
+  .html {
+    font-size: 50%;
+  }
+
+  .header {
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+
+    padding: 2rem;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}

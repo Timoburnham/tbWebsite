@@ -141,6 +141,18 @@ body {
   height: 8rem;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 5rem;
+  width: 5rem;
+  color: #555;
+}
+
 /*Header Section */
 
 .header {
