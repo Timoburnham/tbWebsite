@@ -139,8 +139,6 @@ body {
   color: #9e0606;
 }
 
-
-
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -159,8 +157,6 @@ body {
 }
 
 /*Header Section */
-
-
 
 .header {
   display: flex;
@@ -249,7 +245,7 @@ body {
 
 .choose-your-world {
   padding: 3rem;
-  
+
   background-color: rgb(0, 0, 0);
 }
 
@@ -259,7 +255,14 @@ body {
   border-radius: 0.5rem;
   will-change: transform;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  padding-top: 1rem;
+}
+
+.world-text-main {
+  color: antiquewhite;
+}
+
+.world-text-secondary {
+  color: #555;
 }
 
 .world-image-wrapper {
@@ -307,5 +310,4 @@ body {
 .footer-text {
   font-size: 5rem;
   line-height: 1;
-  
 }
