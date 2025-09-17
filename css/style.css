@@ -156,20 +156,43 @@ body {
   display: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+
 /*Header Section */
 
 .header {
   display: flex;
-  position: relative;
+
   justify-content: space-between;
   align-items: center;
   background-color: rgb(186, 241, 174);
-  height: 10rem;
+  height: 3rem;
   padding: 0 4.8rem;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.header:hover {
+  height: 10rem;
 }
 
 .logo {
   height: 8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.header:hover .logo {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*Hero Section */
