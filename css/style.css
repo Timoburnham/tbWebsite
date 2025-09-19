@@ -32,13 +32,11 @@ body {
 .heading-secondary {
   font-size: 4rem;
   font-weight: 600;
-  
 }
 
 .heading-tertiary {
   font-size: 3rem;
   font-weight: 500;
-  
 }
 
 .container {
@@ -352,30 +350,25 @@ body {
   line-height: 1;
 }
 
-
-
 /* styles for world pages */
 
+.world-explained {
+  padding: 3rem;
+}
 
 .world-explained-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
 }
 
-.world-explained{
-  padding: 3rem;
-
-  background-color: rgb(0, 0, 0);
-}
-
-.world-explained-text{
-  font-size: 4rem;
+.world-explained-text {
+  font-size: 3rem;
   text-align: center;
   max-width: 80rem;
-  
-  
+  padding: 3rem;
+  font-weight: 300;
 }
 
 .world-explained-img {
@@ -383,4 +376,9 @@ body {
   height: auto;
   display: block;
   margin: auto 0;
+  padding: 3rem;
+}
+
+.silver-empire-color {
+  background-color: #f0fffe;
 }
