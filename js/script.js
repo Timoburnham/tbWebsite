@@ -3,18 +3,22 @@
 const btnNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
 
+//Paralax
+const background = document.querySelector(
+  ".cover-background-image .background, .black-saint-background-image .background"
+);
+
 //gallery variables
 const galleryImages = document.querySelectorAll(".gallery-img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.querySelector(".lightbox-img");
 const closeBtn = document.querySelector(".lightbox-close");
 
-if (btnNav){
-
-btnNav.addEventListener("click", function () {
-  header.classList.toggle("nav-open");
-});
-};
+if (btnNav) {
+  btnNav.addEventListener("click", function () {
+    header.classList.toggle("nav-open");
+  });
+}
 //nav expand functionality
 
 header.addEventListener("mouseenter", () => {
@@ -32,16 +36,23 @@ header.addEventListener("click", () => {
   header.classList.toggle("expanded");
 });
 
+//background paralax effect
+if (background) {
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    background.style.transform = `translateY(${scrollY * 0.5}px)`; // moves at half speed
+  });
+}
 
 //gallery functionality
 
 if (galleryImages.length > 0 && lightbox && lightboxImg && closeBtn) {
-
-  console.log("gallery activated")
-  galleryImages.forEach(img => {
+  console.log("gallery activated");
+  galleryImages.forEach((img) => {
     img.addEventListener("click", () => {
-      lightbox.style.display = "flex";  
-      lightboxImg.src = img.src;        
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+      lightboxImg.id = "lightbox-img";
     });
   });
 
@@ -49,10 +60,13 @@ if (galleryImages.length > 0 && lightbox && lightboxImg && closeBtn) {
     lightbox.style.display = "none";
   });
 
-  lightbox.addEventListener("click", e => {
+  lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
-      lightbox.style.display = "none"; 
+      lightbox.style.display = "none";
     }
   });
 }
 
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") lightbox.style.display = "none";
+});
