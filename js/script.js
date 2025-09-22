@@ -39,8 +39,10 @@ header.addEventListener("click", () => {
 //background paralax effect
 if (background) {
   window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-    background.style.transform = `translateY(${scrollY * 0.5}px)`; // moves at half speed
+    window.requestAnimationFrame(() => {
+      const scrollY = window.scrollY;
+      background.style.backgroundPosition = `left ${scrollY * 0.5}px`;
+    });
   });
 }
 
