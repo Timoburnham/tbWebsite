@@ -4,7 +4,7 @@ const btnNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
 
 //Paralax
-const background = document.querySelector(
+const background = document.querySelectorAll(
   ".cover-background-image .background, .black-saint-background-image .background"
 );
 
@@ -38,11 +38,15 @@ header.addEventListener("click", () => {
 
 //background paralax effect
 if (background) {
-  window.addEventListener("scroll", () => {
-    window.requestAnimationFrame(() => {
-      const scrollY = window.scrollY;
-      background.style.backgroundPosition = `left ${scrollY * 0.5}px`;
+  function updateParallax() {
+    const scrollY = window.scrollY;
+    background.forEach((bg) => {
+      bg.style.transform = `translateY(${scrollY * 0.4}px)`;
     });
+  }
+
+  window.addEventListener("scroll", () => {
+    requestAnimationFrame(updateParallax);
   });
 }
 

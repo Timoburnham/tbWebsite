@@ -342,54 +342,38 @@ body {
 
 /**** styles for world pages ****/
 
-/* Silver Empire background */
-.cover-background-image {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-.cover-background-image .background {
-  position: absolute;
-  inset: 0;
-  background: url("../assets/images/Dawn of the Black Sun full no text.jpg")
-    left center / cover no-repeat;
-  filter: brightness(0.6) saturate(3);
-  z-index: 0;
-}
-
-.cover-background-image .content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: white;
-  padding: 2rem;
-}
-
-.cover-background-image .background::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-/* Black Saint background */
-
+/* Background images */
+.cover-background-image,
 .black-saint-background-image {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
 }
 
+.cover-background-image .background,
 .black-saint-background-image .background {
   position: absolute;
   inset: 0;
-  background: url("../assets/images/The_black_saint_front_no_text.jpg") left
-    center / cover no-repeat;
-  filter: brightness(0.6) saturate(3);
+  height: 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform;
   z-index: 0;
+  background-position: left center;
 }
 
+.cover-background-image .background {
+  background-image: url("../assets/images/Dawn of the Black Sun full no text.jpg");
+  filter: brightness(0.6) saturate(3);
+}
+
+.black-saint-background-image .background {
+  background-image: url("../assets/images/The_black_saint_front_no_text.jpg");
+  filter: brightness(0.6) saturate(3);
+}
+
+.cover-background-image .content,
 .black-saint-background-image .content {
   position: relative;
   z-index: 1;
@@ -398,12 +382,15 @@ body {
   padding: 2rem;
 }
 
+.cover-background-image .background::after,
 .black-saint-background-image .background::after {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(255, 255, 255, 0.6);
 }
+
+/* world explained */
 
 .world-explained {
   padding: 3rem;
