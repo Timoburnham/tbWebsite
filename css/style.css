@@ -20,11 +20,6 @@ body {
 
 /* General */
 
-.silver-empire-background-image {
-  background: url("../assets/images/Dawn of the Black Sun full no text.jpg")
-    right/cover no-repeat fixed;
-}
-
 .heading-primary {
   font-size: 5rem;
   font-weight: 700;
@@ -68,6 +63,15 @@ body {
 .section-divider {
   height: 10rem;
   background-color: #249fec;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2) inset;
+  opacity: 0.7;
+}
+
+.section-divider-2 {
+  height: 10rem;
+  background-color: #166597;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2) inset;
@@ -239,7 +243,7 @@ body {
 .section-hero {
   background-color: rgb(187, 242, 175);
   text-align: center;
-  padding: 4.4rem 0 9rem 0;
+  padding: 4rem 0 9rem 0;
 }
 
 .hero {
@@ -249,7 +253,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 9.6rem 0;
+  padding: 9rem 0;
 }
 
 .hero-description {
@@ -433,7 +437,7 @@ body {
   height: auto;
   display: block;
   margin: auto 0;
-  padding: 2rem;
+
   padding-bottom: 0;
 }
 
@@ -525,6 +529,28 @@ body {
   width: 120px;
   display: block;
   margin: 0 auto 0.5rem;
+}
+
+/*start reading section */
+
+.start-reading {
+  padding: 3rem;
+}
+
+.start-reading .grid {
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.start-reading-btn {
+  width: auto;
+  align-self: center;
+  justify-self: end;
+}
+
+.start-reading-image {
+  width: 100%;
 }
 
 /* footer section */
