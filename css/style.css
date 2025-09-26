@@ -114,6 +114,16 @@ body {
   margin-right: 1.4rem;
 }
 
+.margin-right-big {
+  margin-right: 10rem;
+}
+
+.margin-left-small {
+  margin-left: 1.4rem;
+}
+.margin-left-big {
+  margin-left: 3rem;
+}
 .margin-bottom-small {
   margin-bottom: 2rem;
 }
@@ -379,7 +389,7 @@ body {
   z-index: 1;
   text-align: center;
   color: white;
-  padding: 2rem;
+  padding-bottom: 0rem;
 }
 
 .cover-background-image .background::after,
@@ -399,8 +409,14 @@ body {
 .world-explained-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 1rem;
   align-items: center;
+}
+
+.world-explained-grid.close-grid {
+  gap: 1rem;
+  grid-template-columns: auto auto;
+  justify-content: center;
 }
 
 .world-explained-text {
@@ -408,6 +424,7 @@ body {
   text-align: center;
   max-width: 80rem;
   padding: 3rem;
+
   font-weight: 300;
 }
 
@@ -416,7 +433,7 @@ body {
   height: auto;
   display: block;
   margin: auto 0;
-  padding: 3rem;
+  padding: 2rem;
   padding-bottom: 0;
 }
 
