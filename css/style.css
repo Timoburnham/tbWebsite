@@ -71,11 +71,11 @@ body {
 
 .section-divider-2 {
   height: 10rem;
-  background-color: #166597;
+  background-color: #0c4060;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2) inset;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .btn:link,
@@ -249,11 +249,11 @@ body {
 .hero {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 3rem;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 9rem 0;
+  padding: 0rem 0;
 }
 
 .hero-description {
