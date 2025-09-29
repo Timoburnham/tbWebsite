@@ -557,6 +557,23 @@ body {
   width: 100%;
 }
 
+/*about */
+
+.about-the-author {
+  padding: 3rem;
+  background-color: #249fec;
+}
+
+.about-image {
+  width: 100%;
+}
+
+.about-text {
+  font-size: 400rem;
+
+  justify-self: center;
+}
+
 /* footer section */
 
 .footer-section {
