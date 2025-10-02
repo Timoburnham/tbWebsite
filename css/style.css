@@ -92,11 +92,13 @@ body {
 .btn-call-to-action:visited {
   background-color: rgb(225, 21, 21);
   color: #040404;
+  transition: transform 0.25s ease;
 }
 
 .btn-call-to-action:hover,
 .btn-call-to-action:active {
   background-color: rgb(132, 15, 15);
+  transform: scale(1.07);
 }
 
 .btn-learn-more:link,
@@ -569,12 +571,6 @@ body {
   display: inline-block;
   width: auto;
   margin: 0 auto;
-
-  transition: transform 0.25s ease;
-}
-
-.about-the-author .btn:hover {
-  transform: scale(1.05);
 }
 
 .about-grid {
