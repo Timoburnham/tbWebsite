@@ -380,12 +380,12 @@ body {
 }
 
 .cover-background-image .background {
-  background-image: url("../assets/images/Dawn of the Black Sun full no text.jpg");
+  background-image: url("../assets/images/Dawn of the Black Sun full no text-lq.webp");
   filter: brightness(0.6) saturate(3);
 }
 
 .black-saint-background-image .background {
-  background-image: url("../assets/images/The_black_saint_front_no_text.jpg");
+  background-image: url("../assets/images/The_black_saint_front_no_text-lq.webp");
   filter: brightness(0.6) saturate(3);
 }
 
