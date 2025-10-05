@@ -8,6 +8,10 @@ const background = document.querySelectorAll(
   ".cover-background-image .background, .black-saint-background-image .background"
 );
 
+//background color change
+const chooseWorldSection = document.querySelector(".choose-your-world");
+const worldImages = document.querySelectorAll(".world-image");
+
 //gallery variables
 const galleryImages = document.querySelectorAll(".gallery-img");
 const lightbox = document.getElementById("lightbox");
@@ -76,3 +80,19 @@ if (galleryImages.length > 0 && lightbox && lightboxImg && closeBtn) {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") lightbox.style.display = "none";
 });
+
+//background color change functionality
+
+if (chooseWorldSection) {
+  worldImages.forEach((img) => {
+    const color = img.getAttribute("data-color");
+
+    img.addEventListener("mouseenter", () => {
+      chooseWorldSection.style.backgroundColor = color;
+    });
+
+    img.addEventListener("mouseleave", () => {
+      chooseWorldSection.style.backgroundColor = "#030303ff";
+    });
+  });
+}
