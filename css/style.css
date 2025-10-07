@@ -62,16 +62,31 @@ body {
 
 .section-divider {
   height: 10rem;
-  background-color: #249fec;
+  background-color: #1d72da;
+  background: linear-gradient(
+    90deg,
+    rgb(7, 77, 127) 0%,
+    rgb(12, 103, 143) 30%,
+    rgb(23, 95, 171) 60%,
+    rgb(22, 76, 134) 90%
+  );
   width: 100vw;
+  border-top: 2px solid #3d6eae;
   margin-left: calc(-50vw + 50%);
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2) inset;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .section-divider-2 {
   height: 10rem;
-  background-color: #0c4060;
+  background-color: rgb(10, 65, 104);
+  background: linear-gradient(
+    90deg,
+    rgb(10, 65, 104) 0%,
+    rgb(12, 103, 143) 30%,
+    rgb(41, 121, 206) 60%,
+    rgb(97, 145, 198) 90%
+  );
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2) inset;
@@ -90,15 +105,37 @@ body {
 
 .btn-call-to-action:link,
 .btn-call-to-action:visited {
-  background-color: rgb(225, 21, 21);
-  color: #040404;
+  background-color: #fcb910;
+  color: #222;
   transition: transform 0.25s ease;
 }
 
 .btn-call-to-action:hover,
 .btn-call-to-action:active {
-  background-color: rgb(132, 15, 15);
-  transform: scale(1.07);
+  background-color: #ffc966;
+  transform: scale(1.06);
+}
+
+.section-hero .btn-call-to-action {
+  background: linear-gradient(135deg, #0047ff 0%, #0073ff 100%);
+  color: white;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.section-hero .btn-call-to-action:hover {
+  background: linear-gradient(135deg, #0066ff 0%, #0073ff 100%);
+  transform: scale(1.06);
+}
+
+.about-the-author .btn-call-to-action {
+  background-color: #09b660;
+  color: #031601;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.about-the-author .btn-call-to-action:hover {
+  background-color: #1bc670;
+  transform: scale(1.06);
 }
 
 .btn-learn-more:link,
@@ -128,7 +165,7 @@ body {
   margin-left: 1.4rem;
 }
 .margin-left-big {
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 .margin-bottom-small {
   margin-bottom: 2rem;
@@ -243,7 +280,8 @@ body {
 /*Hero Section */
 
 .section-hero {
-  background-color: rgb(187, 242, 175);
+  background-color: #3fa069;
+
   text-align: center;
   padding: 4rem 0 9rem 0;
 }
@@ -257,12 +295,16 @@ body {
   align-items: center;
   padding: 0rem 0;
 }
+.hero-text {
+  color: white;
+}
 
 .hero-description {
   font-size: 2rem;
   line-height: 1.7;
   margin-bottom: 4rem;
   text-align: center;
+  color: white;
 }
 
 .hero-image {
@@ -399,12 +441,18 @@ body {
   padding-bottom: 0rem;
 }
 
-.cover-background-image .background::after,
-.black-saint-background-image .background::after {
+.cover-background-image .background::after {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.black-saint-background-image .background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* world explained */
@@ -511,8 +559,8 @@ body {
 .reviews-section {
   text-align: center;
   padding: 4rem 2rem;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
+  background: rgba(0, 0, 0, 0.4);
+
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -618,27 +666,21 @@ body {
   box-shadow: 0 -1px 12px 1px #2b2b2bb2;
   position: relative;
   padding-bottom: 1rem;
-  border-top: 2px solid #e36d6d;
-  background: #cb362a;
-  background: linear-gradient(98deg,rgb(217, 66, 53) 0%, rgb(224, 90, 75) 36%, rgb(223, 103, 88) 40%, rgb(217, 83, 68) 43%, rgb(203, 54, 42) 91%, rgb(138, 41, 41) 100%);
+  border-top: 2px solid #f29b38;
+  background: #e07b00;
+  background: linear-gradient(
+    98deg,
+    rgb(255, 153, 51) 0%,
+    rgb(255, 136, 0) 30%,
+    rgb(242, 107, 19) 45%,
+    rgb(224, 91, 14) 70%,
+    rgb(191, 72, 0) 100%
+  );
 }
 
 .footer-text {
   color: #480303;
   font-size: 7rem;
-}
-
-@media (max-width: 67rem) {
-  .footer-text {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 45rem) {
-  .footer-text {
-    font-size: 4rem;
-    margin-top: 2rem;
-  }
 }
 
 .footer .logo {
