@@ -260,6 +260,7 @@ body {
   padding: 0 4.8rem;
   overflow: hidden;
   transition: height 0.3s ease;
+  border-bottom: 1px solid rgb(163, 188, 193);
 }
 
 .header.expanded {
@@ -670,11 +671,11 @@ body {
   background: #e07b00;
   background: linear-gradient(
     98deg,
-    rgb(255, 153, 51) 0%,
-    rgb(255, 136, 0) 30%,
+    rgb(211, 122, 33) 0%,
+    rgb(215, 115, 0) 30%,
     rgb(242, 107, 19) 45%,
     rgb(224, 91, 14) 70%,
-    rgb(191, 72, 0) 100%
+    rgb(220, 84, 0) 100%
   );
 }
 
